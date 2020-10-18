@@ -8,8 +8,8 @@ const { Navigator, Screen } = createStackNavigator()
 import OrphanagesMap from './pages/OrphanagesMap'
 import OrphanageDetails from './pages/OrphanageDetails'
 
-import selectMapPosition from './createOrphanage/selectMapPosition'
-import OrphanageData from './createOrphanage/orphanageData'
+import SelectMapPosition from './pages/createOrphanage/SelectMapPosition'
+import OrphanageData from './pages/createOrphanage/OrphanageData'
 
 import Header from './components/Header'
 
@@ -33,7 +33,7 @@ export default function Routes() {
 
                 <Screen 
                     name="SelectMapPosition" 
-                    component={selectMapPosition}
+                    component={SelectMapPosition}
                     options={{
                         headerShown: true,
                         header: () => <Header title="Selcione no mapa "/> 
